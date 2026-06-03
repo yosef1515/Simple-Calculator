@@ -1,57 +1,42 @@
 body {
-    background-color: rgb(221, 180, 77);
-    height: 0;
-    width: 0;
-}
-
-.central {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: yellow;
 }
 
 .base {
-    background-color: gray;
-    width: 300px;
-    height: 450px;
+    background-color: grey;
+    height: 40vh;
+    width: 30vh;
     border-radius: 10px;
 }
 
 .visor {
     background-color: white;
-    width: 275px;
-    height: 100px;
-    transform: translate(5%, 15%);
+    height: 10vh;
+    width: 28vh;
+    display: flex;
+    justify-self: center;
+    margin-top: 1vh;
     border-radius: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    margin-bottom: 1vh;
 }
 
-.botao {
-    background-color: white;
+.botoes {
+    display: grid;
+    grid-template-columns: 5px repeat(4, 30px);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.botoes button {
     height: 30px;
     width: 30px;
-}
-
-.posicao_mais {
-    transform: translate(225px, 50px);
-}
-
-.posicao_9 {
-    transform: translate(150px, 50px);
-}
-
-.posicao_8 {
-    transform: translate(75px, 50px);
-}
-
-.posicao_7 {
-    transform: translate(1px, 50px);
-}
-
-.posicao_menos {
-    transform: translate(89px, 100px);
-}
-
-.posicao_6 {
-    transform: translate(14px, 100px);
+    font-size: 1.4em;
 }
